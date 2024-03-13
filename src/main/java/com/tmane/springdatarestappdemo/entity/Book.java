@@ -15,6 +15,7 @@ public class Book {
     private Long id;
     private String title;
     private Integer pageNumbers;
+    @Enumerated(EnumType.STRING)
     private String subject;
     @ManyToOne
     private Author author;
