@@ -1,5 +1,6 @@
 package com.tmane.springdatarestappdemo.entity;
 
+import com.tmane.springdatarestappdemo.enums.Subject;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,7 +17,7 @@ public class Book {
     private String title;
     private Integer pageNumbers;
     @Enumerated(EnumType.STRING)
-    private String subject;
+    private Subject subject;
     @ManyToOne
     private Author author;
 }
